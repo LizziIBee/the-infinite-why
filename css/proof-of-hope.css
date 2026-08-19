@@ -1,0 +1,117 @@
+/* Proof of Hope section-specific additions.
+   Loaded after style.css so these rules do not affect Ordinary Astonishment. */
+
+.proof-of-hope-article .image-credit {
+    color: #6a655e;
+}
+
+.proof-of-hope-article .story-links {
+    margin: 30px 0 28px;
+    padding: 26px 28px;
+    border-top: 1px solid #c99632;
+    border-bottom: 1px solid #d9d1c3;
+    background: #f5f0e6;
+}
+
+.proof-of-hope-article .story-links-kicker {
+    margin: 0 0 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: #b77b16;
+}
+
+.proof-of-hope-article .story-links h2 {
+    margin: 0 0 14px !important;
+    font-size: 1.45rem !important;
+}
+
+.proof-of-hope-article .story-links p:not(.story-links-kicker) {
+    margin-bottom: 18px;
+    font-size: 0.96rem;
+    line-height: 1.58;
+}
+
+.proof-of-hope-article .story-link-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.proof-of-hope-article .story-link-button {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid #1e1e1e;
+    background: #1e1e1e;
+    color: #fffdf8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.proof-of-hope-article .story-link-button:hover,
+.proof-of-hope-article .story-link-button:focus-visible {
+    background: #8c6420;
+    border-color: #8c6420;
+}
+
+.proof-of-hope-article .story-link-button-secondary {
+    background: transparent;
+    color: #1e1e1e;
+}
+
+.proof-of-hope-article .story-link-button-secondary:hover,
+.proof-of-hope-article .story-link-button-secondary:focus-visible {
+    color: #fffdf8;
+}
+
+.proof-of-hope-article .article-references {
+    margin-top: 26px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-light);
+}
+
+.proof-of-hope-article .article-references h2 {
+    margin: 0 0 14px !important;
+    font-size: 1.3rem !important;
+}
+
+.proof-of-hope-article .article-references ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.proof-of-hope-article .article-references li {
+    margin-bottom: 9px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.45;
+}
+
+.proof-of-hope-article .article-references li a {
+    color: #6e501f;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.proof-of-hope-article .article-references li span {
+    display: block;
+    margin-top: 2px;
+}
+
+@media (max-width: 700px) {
+    .proof-of-hope-article .story-links {
+        padding: 22px;
+    }
+
+    .proof-of-hope-article .story-link-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .proof-of-hope-article .story-link-button {
+        text-align: center;
+    }
+}
